@@ -1,0 +1,18 @@
+  //////Media Query mixins start//////
+    //for mobile only///
+    @mixin sm {
+        @media (min-width: 576px) { @content; }
+      }
+        //for tablet ///
+    @mixin md {
+        @media (min-width: 768px) { @content; }
+      }
+        //for large scren///
+    @mixin lg {
+        @media (min-width: 992px) { @content; }
+      }
+        //for extra large scren///
+    @mixin xl {
+        @media (min-width: 1200px) { @content; }
+      }
+      //////Media Query mixins end//////

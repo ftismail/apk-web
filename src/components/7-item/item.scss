@@ -1,0 +1,18 @@
+.item{
+    padding: 10px;
+    height: auto;
+    background-color: #F0F5F3;
+}
+.card{
+    border-radius: 10px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    &-img{
+        height:80px ;
+        border-radius: 10px;
+        width: 100%;
+    }
+}

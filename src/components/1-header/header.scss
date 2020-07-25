@@ -1,0 +1,36 @@
+@import '../../assets/scss/variants.scss';
+@import '../../assets/scss/mixins.scss';
+.header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: $l-green;
+    color:white;
+    height: 70px;
+    &-list-container{
+        grid-column: 8/span 4;
+        display: none;
+        @include md{
+            display: block;
+        }
+    }
+    &-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        li{
+            cursor: pointer;
+        }
+    }
+    .logo-container{
+        grid-column: 1/span 6 ;
+        display: grid;
+        place-items: center;
+        @include sm{
+            grid-column: 1/span 4 ;
+        }
+        @include md{
+            grid-column: 1/span 3 ;
+        }
+    }
+}

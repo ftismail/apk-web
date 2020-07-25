@@ -1,0 +1,9 @@
+@import '../../assets/scss/variants.scss';
+@import '../../assets/scss/mixins.scss';
+.side-bar{
+    background-color: white;
+    display: none;
+    @include md{
+        display: block;
+    }
+}

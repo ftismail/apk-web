@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {Switch,Route} from 'react-router-dom';
+import Header from './components/1-header/header';
+import HeroSection from './components/2-hero-secion/hero';
+import Home from './pages/home-page/home'
+import './app.scss'
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+  render() { 
+    return ( 
+      <div className='app'>
+        <Header/>
+        <HeroSection/>
+        <Switch>
+        <Route exact path='/' component={Home} />
+        </Switch>
+      </div>
+     );
+  }
 }
-
 export default App;

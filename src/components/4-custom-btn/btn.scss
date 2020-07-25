@@ -1,0 +1,10 @@
+@import '../../assets/scss/variants.scss';
+@import '../../assets/scss/mixins.scss';
+.btn{
+    background-color: $l-green;
+    border-radius: 20px;
+    padding: 7px 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
