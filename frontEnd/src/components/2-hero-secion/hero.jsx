@@ -6,7 +6,7 @@ const HeroSection = (props) => {
     return ( 
         <div className='hero'>
             <form className='form' onSubmit={props.handelSubmit}>
-                <Input name = 'Search' type='search' placeholder='Search..' handelChange={props.handelChanges} />
+                <Input name = 'search' type='search' placeholder='Search..' handelChange={props.handelChanges} />
                 <Button add='btn-form' type='submit'>Search</Button>
             </form>
         </div>

@@ -1,5 +1,5 @@
 @import './assets/scss/variants.scss';
-
+@import './assets/scss/mixins.scss';
 *{
     padding: 0;
     margin: 0;
@@ -13,3 +13,4 @@ ul,li,a{
     list-style: none;
     text-decoration: none;
 }
+
